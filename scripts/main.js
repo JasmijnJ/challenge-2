@@ -20,8 +20,8 @@ tl1.to(cloud1, 1, {top: 310, ease: Sine.easeInOut})
 // tijd
 function startTime() {
     var today = new Date();
-    // var h = today.getHours();
-    var h = 20;
+    var h = today.getHours();
+    // var h = 20;
     var m = today.getMinutes();
     
     m = checkTime(m);
