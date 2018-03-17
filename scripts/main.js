@@ -17,6 +17,14 @@ tl1.to(cloud1, 1, {top: 310, ease: Sine.easeInOut})
    .to(cloud1, 1, {top: 300, ease: Sine.easeInOut})
    .to(cloud1, 1, {left: 200, ease: Sine.easeInOut});
 
+var cloud2 = document.getElementById('cloud2');
+
+var tl1 = new TimelineMax({repeat:200});
+tl1.to(cloud2, 1, {top:160, ease: Sine.easeInOut})
+   .to(cloud2, 1, {left: 760, ease: Sine.easeInOut})
+   .to(cloud2, 1, {top: 150, ease: Sine.easeInOut})
+   .to(cloud2, 1, {left: 750, ease: Sine.easeInOut});
+
 // tijd
 function startTime() {
     var today = new Date();

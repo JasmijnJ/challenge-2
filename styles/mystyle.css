@@ -23,7 +23,7 @@ body {
 #txt, #date {
 	font-family: 'Quicksand', sans-serif;
 	text-align: center;
-	font-size: 3em;
+	font-size: 3.5em;
 	color: white;
 }
 
@@ -42,4 +42,43 @@ body {
 	left: 200px;
 	width: 130px;
 	opacity: 0.6;
+}
+
+#cloud2 {
+	position: absolute;
+	top:150px;
+	left: 750px;
+	display: none;
+	opacity: 0.4;
+
+}
+
+.rocket {
+	position: relative;
+	width: 80px;
+	top: 30px;
+	left: 50%;
+	right: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+	.sun {
+		width: 300px;
+	}
+
+	#txt, #date {
+		font-size: 4em;
+	}
+
+	#cloud {
+		width: 150px;
+	}
+
+	#cloud1 {
+		width: 180px;
+	}
+
+	#cloud2 {
+		display: inline;
+	}
 }
