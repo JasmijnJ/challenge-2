@@ -83,11 +83,16 @@ window.onload = function(){
 }
 
 // sun
-var sun = document.getElementById('sun')
+var sun = document.getElementById('sun');
 
 TweenMax.to(sun, 20, {rotation:"360", ease:Linear.easeNone, repeat:-1});
 
 // rocket
-var rocket = document.getElementById('rocket')
+var rocket = document.getElementById('rocket');
 var tl2 = new TimelineMax({repeat:200});
 tl2.to(rocket, 15, {top: -1100, ease: Power4.easeOut.easeInOut});
+
+// spaceman
+var spaceman = document.getElementById('spaceman')
+var tl3 = new TimelineMax({repeat:200});
+tl3.to(spaceman,20,{left:500, top:-150});
