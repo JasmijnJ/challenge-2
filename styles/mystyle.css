@@ -60,11 +60,11 @@ body {
 
 }
 
-.rocket {
+#rocket {
 	position: relative;
-	width: 80px;
-	top: 30px;
-	left: 50%;
+	width: 100px;
+	margin-top: 200px;
+	left: 60%;
 	right: 50%;
 }
 

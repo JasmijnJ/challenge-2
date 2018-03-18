@@ -80,7 +80,7 @@ today = mm + '/' + dd + '/' + yyyy;
 
 window.onload = function(){
   "use strict";
-   setInterval(showDate, 500);
+   showDate();
    startTime();
    changeSource();
 }
@@ -89,3 +89,12 @@ window.onload = function(){
 var sun = document.getElementById('sun')
 
 TweenMax.to(sun, 20, {rotation:"360", ease:Linear.easeNone, repeat:-1});
+
+// raket
+var rocket = document.getElementById('rocket')
+var tl2 = new TimelineMax({repeat:200});
+tl2.to(rocket, 20, {top: -900, ease: Power4.easeOut.easeInOut});
+
+
+
+ // TweenLite.to(rocket, 2.5, { ease: Power4.easeOut, y: -700, repeat:2 });
