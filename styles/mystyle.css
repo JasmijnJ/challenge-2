@@ -97,3 +97,9 @@ body {
 		margin-top: -291px;
 	}
 }
+
+@media screen and (min-width: 1024px) {
+	#rocket {
+		width: 200px;
+	}
+}

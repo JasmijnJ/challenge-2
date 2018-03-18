@@ -99,4 +99,4 @@ TweenMax.to(sun, 20, {rotation:"360", ease:Linear.easeNone, repeat:-1});
 // raket
 var rocket = document.getElementById('rocket')
 var tl2 = new TimelineMax({repeat:200});
-tl2.to(rocket, 20, {top: -900, ease: Power4.easeOut.easeInOut});
+tl2.to(rocket, 15, {top: -1100, ease: Power4.easeOut.easeInOut});
