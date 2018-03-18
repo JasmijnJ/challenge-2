@@ -25,6 +25,10 @@ tl1.to(cloud2, 1, {top:160, ease: Sine.easeInOut})
    .to(cloud2, 1, {top: 150, ease: Sine.easeInOut})
    .to(cloud2, 1, {left: 750, ease: Sine.easeInOut});
 
+
+
+
+
 // tijd
 function startTime() {
     var today = new Date();
@@ -80,3 +84,8 @@ window.onload = function(){
    startTime();
    changeSource();
 }
+
+// draaiend zonnetje
+var sun = document.getElementById('sun')
+
+TweenMax.to(sun, 20, {rotation:"360", ease:Linear.easeNone, repeat:-1});

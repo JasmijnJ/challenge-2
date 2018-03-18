@@ -15,7 +15,10 @@ body {
 	display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 74px;
+    margin-top: -195px;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 
@@ -25,6 +28,10 @@ body {
 	text-align: center;
 	font-size: 3.5em;
 	color: white;
+}
+
+#txt {
+	margin-top:225px;
 }
 
 
@@ -80,5 +87,13 @@ body {
 
 	#cloud2 {
 		display: inline;
+	}
+
+	#txt {
+		margin-top:326px;
+	}
+
+	.sun {
+		margin-top: -291px;
 	}
 }
