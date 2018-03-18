@@ -33,7 +33,6 @@ tl1.to(cloud2, 1, {top:160, ease: Sine.easeInOut})
 function startTime() {
     var today = new Date();
     var h = today.getHours();
-    // var h = 20;
     var m = today.getMinutes();
     
     m = checkTime(m);
@@ -41,21 +40,27 @@ function startTime() {
     document.getElementById('txt').innerHTML =
     h + ":" + m ;
     var t = setTimeout(startTime, 500);
+
+    if (h > 19) {  
+     document.body.style.backgroundColor = 'black';
+     document.getElementById("sun").src = 'images/moon.png';
+     document.getElementById("txt").style.color = "#636160";
+     document.getElementById("date").style.color = "#636160";
+   }
+   if (h < 6) {  
+     document.body.style.backgroundColor = 'black';
+     document.getElementById("sun").src = 'images/moon.png';
+     document.getElementById("txt").style.color = "#636160";
+     document.getElementById("date").style.color = "#636160";
+   }
+
 }
 function checkTime(i) {
     if (i < 10) {i = "0" + i};  
     return i;
 }
 
-// image source veranderen
-function changeSource() {
-		if (h > 19) {	
-		 document.body.style.backgroundColor = "red";
-	
-		// document.getElementById("cloud").scr='/images/darkcloud.png';
 
-	}
-}
 
 
 
@@ -82,8 +87,9 @@ window.onload = function(){
   "use strict";
    showDate();
    startTime();
-   changeSource();
+   checkTime();
 }
+
 
 // draaiend zonnetje
 var sun = document.getElementById('sun')
@@ -94,7 +100,3 @@ TweenMax.to(sun, 20, {rotation:"360", ease:Linear.easeNone, repeat:-1});
 var rocket = document.getElementById('rocket')
 var tl2 = new TimelineMax({repeat:200});
 tl2.to(rocket, 20, {top: -900, ease: Power4.easeOut.easeInOut});
-
-
-
- // TweenLite.to(rocket, 2.5, { ease: Power4.easeOut, y: -700, repeat:2 });
