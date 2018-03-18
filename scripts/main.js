@@ -37,7 +37,7 @@ function startTime() {
     h + ":" + m + ":" + s;
     var t = setTimeout(startTime, 500);
 
-    if (h > 19) {  
+    if (h > 18) {  
      document.body.style.backgroundColor = 'black';
      document.getElementById("sun").src = 'images/moon.png';
      document.getElementById("txt").style.color = "#636160";
