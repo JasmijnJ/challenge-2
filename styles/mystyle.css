@@ -18,8 +18,6 @@ body {
     right: 0;
 }
 
-
-
 #txt, #date {
 	font-family: 'Quicksand', sans-serif;
 	text-align: center;
@@ -30,8 +28,6 @@ body {
 #txt {
 	margin-top:225px;
 }
-
-
 
 #cloud {
 	position: absolute; 
@@ -56,7 +52,6 @@ body {
 	display: none;
 	opacity: 0.4;
 	z-index: 5;
-
 }
 
 #rocket {
@@ -101,5 +96,11 @@ body {
 @media screen and (min-width: 1024px) {
 	#rocket {
 		width: 200px;
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	#txt, #date {
+		font-size: 5em;
 	}
 }

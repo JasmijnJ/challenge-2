@@ -1,4 +1,4 @@
-// animaties wolken 
+// clouds
 
 var cloud = document.getElementById('cloud');
 
@@ -7,7 +7,6 @@ tl1.to(cloud, 1, {top: 410, ease: Sine.easeInOut})
    .to(cloud, 1, {left: 20, ease: Sine.easeInOut})
    .to(cloud, 1, {top: 400, ease: Sine.easeInOut})
    .to(cloud, 1, {left: 8, ease: Sine.easeInOut});
-
 
 var cloud1 = document.getElementById('cloud1');
 
@@ -25,20 +24,17 @@ tl1.to(cloud2, 1, {top:160, ease: Sine.easeInOut})
    .to(cloud2, 1, {top: 150, ease: Sine.easeInOut})
    .to(cloud2, 1, {left: 750, ease: Sine.easeInOut});
 
-
-
-
-
-// tijd
+// time
 function startTime() {
     var today = new Date();
     var h = today.getHours();
     var m = today.getMinutes();
-    
+    var s = today.getSeconds();
+    s = checkTime(s);
     m = checkTime(m);
-    
+  
     document.getElementById('txt').innerHTML =
-    h + ":" + m ;
+    h + ":" + m + ":" + s;
     var t = setTimeout(startTime, 500);
 
     if (h > 19) {  
@@ -60,11 +56,7 @@ function checkTime(i) {
     return i;
 }
 
-
-
-
-
-// datum
+// date
 function showDate(){
 var today = new Date();
 var dd = today.getDate();
@@ -90,13 +82,12 @@ window.onload = function(){
    checkTime();
 }
 
-
-// draaiend zonnetje
+// sun
 var sun = document.getElementById('sun')
 
 TweenMax.to(sun, 20, {rotation:"360", ease:Linear.easeNone, repeat:-1});
 
-// raket
+// rocket
 var rocket = document.getElementById('rocket')
 var tl2 = new TimelineMax({repeat:200});
 tl2.to(rocket, 15, {top: -1100, ease: Power4.easeOut.easeInOut});
