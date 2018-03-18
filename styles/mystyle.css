@@ -49,6 +49,7 @@ body {
 	left: 200px;
 	width: 130px;
 	opacity: 0.6;
+	z-index: 5;
 }
 
 #cloud2 {
